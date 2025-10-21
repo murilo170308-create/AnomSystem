@@ -1,0 +1,115 @@
+/* ======= GERAL ======= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* ======= BARRA SUPERIOR ======= */
+button.btn.btn-secondary {
+  background-color: #888585;
+  border: none;
+  padding: 6px 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 6px 4px;
+}
+
+button.btn.btn-secondary:hover {
+  background-color: #c5bfbf;
+}
+
+/* Botão de fechar (X) no canto direito */
+.btn-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #e0e0e0;
+  border: none;
+  padding: 6px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-close:hover {
+  background-color: #d4d4d4;
+}
+
+/* ======= NAVBAR / CAMPO DE PESQUISA ======= */
+.navbar {
+  background-color: #0052cc;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar input[type="search"] {
+  padding: 6px;
+  border-radius: 40px;
+  border: 1px solid #ccc;
+  width: 220px;
+  margin-right: 6px;
+}
+
+.navbar button {
+  background-color: #b9b9b9;
+  border: none;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #0d7403;
+}
+
+/* ======= TÍTULO ======= */
+h1, h2 {
+  margin: 20px;
+  color: #000;
+}
+
+/* ======= TABELA ======= */
+table {
+  border-collapse: collapse;
+  width: 97%;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #a0a0a0;
+  font-size: 14px;
+}
+
+/* Cabeçalho da tabela */
+.cabecalho th {
+  background-color: #e6e6e6;
+  border: 1px solid #a0a0a0;
+  text-align: left;
+  padding: 8px;
+  font-weight: bold;
+}
+
+/* Linhas e células */
+td {
+  border: 1px solid #a0a0a0;
+  height: 28px;
+  padding: 4px;
+}
+
+/* Linhas vazias com fundo branco */
+tr td[colspan="6"] {
+  color: transparent;
+}
+
+/* ======= BARRA SUPERIOR ESTILO JANELA ======= */
+.topnav{
+  content: "";
+  display: flex;
+  height: 5%;
+  background-color: #0052cc;
+  border-bottom: 2px solid #003d99;
+  justify-content: flex-start;
+}

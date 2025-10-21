@@ -1,0 +1,121 @@
+/* === Estilo geral === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* === Cabeçalho azul === */
+h1 {
+    background: linear-gradient(to bottom, #2e6fd8, #1e4faa);
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 24px;
+}
+
+/* === Container principal === */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* === Lado esquerdo do formulário === */
+.form-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+.form-left label {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.form-left input,
+.form-left textarea {
+    border: 1px solid #888;
+    border-radius: 4px;
+    padding: 6px;
+    margin-top: 4px;
+}
+
+.form-left textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* === Fieldset dos dados essenciais === */
+fieldset {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 15px;
+    width: 35%;
+}
+
+legend {
+    font-weight: 600;
+    padding: 0 8px;
+}
+
+fieldset label {
+    display: inline-block;
+    width: 150px;
+    margin-top: 10px;
+}
+
+/* === Botões === */
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 15px 20px;
+}
+
+/* Ajusta os botões Bootstrap para combinar com a imagem */
+.btn-outline-success {
+    border: 1px solid #888;
+    color: black;
+    background-color: white;
+}
+
+.btn-outline-success:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.btn-outline-danger {
+    border: 1px solid #888;
+    color: black;
+    background-color: white;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+/* === Responsividade básica === */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    fieldset {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .form-left {
+        width: 100%;
+    }
+}
