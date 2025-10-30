@@ -16,8 +16,8 @@
     <h1>Incluir</h1>
 
     <div class="botoes">
-        <button type="button" class="btn btn-outline-success" onclick="window.location.href='anomalias.html'">Salvar</button>
-        <button type="button" class="btn btn-outline-danger" onclick="window.location.href='anomalias.html'">Cancelar</button>
+        <button type="button" class="btn btn-outline-success" onclick="window.location.href='anomalias.php'">Salvar</button>
+        <button type="button" class="btn btn-outline-danger" onclick="window.location.href='anomalias.php'">Cancelar</button>
     </div>
 
     <div class="main-container">

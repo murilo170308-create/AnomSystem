@@ -37,3 +37,7 @@ A primeira tela desenvolvida foi a tela de login, seguida pela tela principal. O
 
 Durante o processo, utilizamos o Bootstrap para a criação de botões, barra de pesquisa e elementos visuais principais, o que trouxe mais agilidade e padronização ao design.
 Além disso, foi preparado o banco de dados, estruturado para armazenar e gerenciar as informações das anomalias registradas pelos usuários.
+
+Dando continuidade ao desenvolvimento, planejamos uma nova etapa de prototipagem voltada especificamente para a tela de cadastro. Essa nova versão do protótipo servirá como base visual e estrutural para a criação do HTML e CSS correspondentes, garantindo que a interface mantenha o mesmo padrão de design e usabilidade das demais telas do sistema.
+
+Além disso, realizamos uma padronização dos arquivos do projeto, renomeando todos os documentos com a terminação “.html” para “.php”. Essa alteração foi feita com o objetivo de integrar o front-end ao back-end, permitindo a utilização de recursos dinâmicos e a comunicação direta com o banco de dados, tornando o sistema mais funcional e preparado para as próximas etapas do desenvolvimento.

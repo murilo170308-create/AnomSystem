@@ -14,14 +14,18 @@
 
     <div class="right">
       <h1>Anom<span>System</span></h1>
+
       <div class="form-group">
         <input type="email" placeholder="digite seu Email">
       </div>
+
       <div class="form-group">
         <input type="password" placeholder="digite sua senha">
       </div>
-      <a href="Front-End/TelaInicial.html" class="btn">Entrar</a> <br>
-    </div>
+
+      <a href="/AnomSystem/Front-End/TelaInicial.php" class="btn">Entrar</a>
+
+</div>
   </div>
 </body>
 </html>

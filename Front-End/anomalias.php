@@ -12,11 +12,11 @@
 <body>
     <div class="topnav">
 
-    <button type="button" class="btn btn-secondary" onclick="window.location.href='incluir.html'">Incluir</button>
+    <button type="button" class="btn btn-secondary" onclick="window.location.href='incluir.php'">Incluir</button>
 
-    <button type="button" class="btn btn-secondary" onclick="window.location.href='alterar.html'">Alterar</button>
+    <button type="button" class="btn btn-secondary" onclick="window.location.href='alterar.php'">Alterar</button>
 
-    <button type="button" class="btn btn-secondary" onclick="window.location.href='consulta.html'">Consultar</button>
+    <button type="button" class="btn btn-secondary" onclick="window.location.href='consulta.php'">Consultar</button>
 
     <button type="button" class="btn btn-secondary">Excluir</button>
 

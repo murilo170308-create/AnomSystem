@@ -11,9 +11,9 @@
     <div class="lateral">
         <img class="lateralimg" src="../img/logo.png" alt="Logo">
         <ol>
-            <li><a href="anomalias.html">Anomalias</a></li>
-            <li>Cadastro</li>
-            <li>Relatório</li>
+            <li><a href="anomalias.php">Anomalias</a></li>
+            <li><a href="cadastro.php">Cadastro</a></li>
+            <li><a href="relatorio.php">Relatorio</a></li>
         </ol>
     </div>
 
