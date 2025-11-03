@@ -1,4 +1,5 @@
-# AnomSystem
+![Logo do Projeto](https://url.exemplo.com/imagem.png)
+
 
 ## Descrição
 O AnomSystem é um sistema web desenvolvido para o registro, controle e análise de anomalias em ambientes industriais.

@@ -6,12 +6,9 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <input type="text" placeholder="Nome">
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Senha">
-    <input type="text" placeholder="Endereço">
-    <input type="text" placeholder="Telefone">
-    <input type="text" placeholder="CPF">
-    <button>Cadastrar</button>
+    <div class="responsáveis">
+        <h3>Responsáveis</h3>
+        <p>Cadastros de responsáveis que iram ser incluídos na anomalia</p>
+    </div>
 </body>
 </html>
