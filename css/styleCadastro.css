@@ -1,0 +1,76 @@
+/* === ESTILO GERAL === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* === NAVBAR === */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #2e6fd8, #1e4faa);
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.navbar h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: 600;
+}
+
+.navbar .btn{
+    width: 8%;
+    height: 8%  ;
+}
+
+/* === CONTAINER DOS CARDS === */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    padding: 10%;
+}
+
+/* === CARD === */
+.card {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6ea0d9;
+    color: #0f192d;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #d8d8d8;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* === TEXTO DOS CARDS === */
+.card-text h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card-text p {
+    margin: 6px 0 0;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+/* === ÍCONES === */
+.card i {
+    font-size: 2.5em;
+    opacity: 0.7;
+}
