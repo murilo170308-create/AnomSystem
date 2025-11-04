@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styleIncluir.css">
+    <title>Novo Usuario</title>
+    <link rel="stylesheet" href="../css/styleNU.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Incluir</title>
 </head>
 
 <body>
-    <div class="topnav">
+    <div class="topbar">
+        <h1>Cadastros de Usuários</h1>
 
+        <div class="buttons">
+            <button type="button" class="btn btn-warning">Cancelar</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='novoUsuario.php'">Salvar</button>
+        </div>
     </div>
-    <h1>Incluir</h1>
-
-    <div class="botoes">
-        <button type="button" class="btn btn-outline-success" onclick="window.location.href='anomalias.php'">Salvar</button>
-        <button type="button" class="btn btn-outline-danger" onclick="window.location.href='anomalias.php'">Cancelar</button>
-    </div>
-
+    
     <div class="main-container">
         <div class="form-left">
             <label for="IdAnomlias">Id. Anomalia</label>
@@ -43,26 +42,7 @@
             <label for="Desc">Descrição</label>
             <textarea name="Desc" id="Desc"></textarea>
         </div>
-
-        <fieldset>
-            <legend>Dados Essenciais</legend>
-            <label for="QA">Quase Acidente</label>
-            <input type="checkbox" id="QA"><br>
-
-            <label for="cpt">C.P.T</label>
-            <input type="checkbox" id="cpt"><br>
-
-            <label for="Fatal">Fatal</label>
-            <input type="checkbox" id="Fatal"><br>
-
-            <label for="AI">Ato Inseguro</label>
-            <input type="checkbox" id="AI"><br>
-
-            <label for="SQI">Situação Insegura</label>
-            <input type="checkbox" id="SQI"><br>
-        </fieldset>
     </div>
-        
 </body>
 
 </html>
