@@ -38,8 +38,8 @@
             <th>Data de Registro</th>
             <th>Responsável</th>
             <th>Área / Setor</th>
-            <th>Grau.Anom</th>
-            <th>Desc.Resumida</th>
+            <th>Classificação</th>
+            <th>Descrição</th>
         </tr>
 
         <tr>

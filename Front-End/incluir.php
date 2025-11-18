@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styleIncluir.css">
+    <link rel="stylesheet" href="../css/styleincluir.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Incluir</title>
 </head>
@@ -42,24 +42,51 @@
 
             <label for="Desc">Descrição</label>
             <textarea name="Desc" id="Desc"></textarea>
+
+            <div class="prazoTempo">
+              <legend>Prazo</legend>
+
+              <label for="Curto">Curto</label>
+              <input type="radio" name="prazo" id="Curto">
+
+              <label for="Médio">Médio</label>
+              <input type="radio" name="prazo" id="Médio">
+
+              <label for="Alto">Alto</label>
+              <input type="radio" name="prazo" id="alto">
+            </div>
         </div>
 
         <fieldset>
-            <legend>Dados Essenciais</legend>
-            <label for="QA">Quase Acidente</label>
-            <input type="checkbox" id="QA"><br>
+            <legend>Dados de Classificação</legend>
 
-            <label for="cpt">C.P.T</label>
-            <input type="checkbox" id="cpt"><br>
+            <legend>SPCIF</legend>
+            <label for="FAT">Fatal</label>
+            <input type="checkbox" id="FAT"><br>
 
-            <label for="Fatal">Fatal</label>
-            <input type="checkbox" id="Fatal"><br>
+            <label for="CPT">C.P.T</label>
+            <input type="checkbox" id="CPT"><br>
 
-            <label for="AI">Ato Inseguro</label>
-            <input type="checkbox" id="AI"><br>
+            <label for="SPTR">Trabalho Restrito</label>
+            <input type="checkbox" id="SPTR"><br>
 
-            <label for="SQI">Situação Insegura</label>
-            <input type="checkbox" id="SQI"><br>
+            <label for="SPT">Tratamento Médico</label>
+            <input type="checkbox" id="SPT"><br>
+
+            <label for="PS">Primeiros Socorros</label>
+            <input type="checkbox" id="PS"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Incidente de Trabalho</legend>
+                <label for="SI">Situação Insegura</label>
+                <input type="checkbox" id="SI"><br>
+
+                <label for="AT">Ato Inseguro</label>
+                <input type="checkbox" id="AT"><br>
+
+                <label for="QA">Quase Acidente</label>
+                <input type="checkbox" id="QA"><br>
         </fieldset>
     </div>
         

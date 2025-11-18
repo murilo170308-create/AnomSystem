@@ -1,120 +1,114 @@
-/* === Estilo geral === */
+/* ===== CONFIGURAÇÕES GERAIS ===== */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
+    font-family: "Segoe UI", Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f7fa;
 }
 
-/* === Cabeçalho azul === */
 h1 {
-    background: linear-gradient(to bottom, #2e6fd8, #1e4faa);
+    background: linear-gradient(to right, #004aad, #0078ff);
     color: white;
-    padding: 10px 20px;
+    padding: 18px 30px;
     margin: 0;
-    font-size: 24px;
+    font-size: 28px;
 }
 
-/* === Container principal === */
-.main-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-/* === Lado esquerdo do formulário === */
-.form-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 60%;
-}
-
-.form-left label {
-    margin-top: 15px;
-    font-weight: 500;
-}
-
-.form-left input,
-.form-left textarea {
-    border: 1px solid #888;
-    border-radius: 4px;
-    padding: 6px;
-    margin-top: 4px;
-}
-
-.form-left textarea {
-    height: 100px;
-    resize: none;
-}
-
-/* === Fieldset dos dados essenciais === */
-fieldset {
-    border: 1px solid #aaa;
-    border-radius: 5px;
-    padding: 15px;
-    width: 35%;
-}
-
-legend {
-    font-weight: 600;
-    padding: 0 8px;
-}
-
-fieldset label {
-    display: inline-block;
-    width: 150px;
-    margin-top: 10px;
-}
-
-/* === Botões === */
+/* ===== BOTÕES SUPERIORES ===== */
 .botoes {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
-    margin: 15px 20px;
+    gap: 15px;
+    padding: 20px 40px;
 }
 
-/* Ajusta os botões Bootstrap para combinar com a imagem */
-.btn-outline-success {
-    border: 1px solid #888;
-    color: black;
-    background-color: white;
+.botoes .btn {
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 6px;
 }
 
-.btn-outline-success:hover {
-    background-color: #007bff;
-    color: white;
-    border-color: #007bff;
+/* ===== CONTAINER PRINCIPAL ===== */
+.main-container {
+    display: flex;
+    gap: 40px;
+    padding: 20px 40px;
 }
 
-.btn-outline-danger {
-    border: 1px solid #888;
-    color: black;
-    background-color: white;
+/* ===== FORMULÁRIO ESQUERDO ===== */
+.form-left {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.btn-outline-danger:hover {
-    background-color: #dc3545;
-    color: white;
-    border-color: #dc3545;
+label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
 }
 
-/* === Responsividade básica === */
-@media (max-width: 768px) {
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #9bb8d3;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+textarea {
+    height: 140px;
+    resize: none;
+}
+
+/* ===== PRAZO ===== */
+.prazoTempo {
+    margin-top: 15px;
+    border: 2px solid #9bb8d3;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+
+.prazoTempo legend {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ===== FIELDSET DIREITO ===== */
+fieldset {
+    width: 40%;
+    padding: 15px 20px;
+    border: 2px solid #9bb8d3;
+    border-radius: 6px;
+    height: fit-content;
+}
+
+fieldset legend {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+fieldset label {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+fieldset input {
+    margin-bottom: 12px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
     .main-container {
         flex-direction: column;
     }
 
-    fieldset {
-        width: 100%;
-        margin-top: 20px;
-    }
-
+    fieldset,
     .form-left {
         width: 100%;
     }
