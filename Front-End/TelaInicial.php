@@ -1,60 +1,100 @@
+<!-- HTML + CSS combinado para tela inicial estilo Arcelor Mittal -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela Inicial</title>
+    <title>Tela Inicial - AnomSystem</title>
     <link rel="stylesheet" href="../css/styleTelaInicial.css">
 </head>
 <body>
-    <!-- Barra lateral -->
+
+    
+
+    <!-- BARRA LATERAL -->
     <div class="lateral">
-        <img class="lateralimg" src="../img/logo.png" alt="Logo">
+        <img src="../img/logo.png" alt="Logo do Sistema">
         <ol>
             <li><a href="anomalias.php">Anomalias</a></li>
             <li><a href="cadastro.php">Cadastro</a></li>
-            <li><a href="relatorio.php">Relatorio</a></li>
+            <li><a href="relatorio.php">Relatórios</a></li>
         </ol>
     </div>
 
-    <!-- Conteúdo principal -->
+    <div class="banner-full">
+        <div class="banner-texto">
+            <h1>Monitoramento Inteligente de Anomalias</h1>
+            <p>Controle, eficiência e segurança industrial.</p>
+        </div>
+    </div>
+    
+    <!-- CONTEÚDO -->
     <div class="conteudo">
-        <div class="graficos">
-            <img src="../img/Barra.png" alt="Gráfico de barras" class="barra">
-            <img src="../img/Pizza.png" alt="Gráfico pizza e círculo" class="pizza">
+
+        <!-- BANNER TOP -->
+        <div class="banner">Monitoramento de Anomalias Industriais</div>
+
+        <!-- ÚLTIMAS ANOMALIAS (tipo "produtos em destaque") -->
+        <div class="secao">
+            <h2 class="titulo-secao">Últimas Anomalias Registradas</h2>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Responsável</th>
+                </tr>
+
+                <tr>
+                    <td>02530</td>
+                    <td>23/03/2026</td>
+                    <td>Vazamento detectado na tubulação do setor de refrigeração.</td>
+                    <td>Equipe de manutenção hidráulica</td>
+                </tr>
+
+                <tr>
+                    <td>02531</td>
+                    <td>24/03/2026</td>
+                    <td>Falha intermitente no setor elétrico da produção.</td>
+                    <td>Setor de engenharia elétrica</td>
+                </tr>
+
+                <tr>
+                    <td>02532</td>
+                    <td>25/03/2026</td>
+                    <td>Rachadura no vidro da janela principal do setor administrativo.</td>
+                    <td>Grupo de vidraceiros</td>
+                </tr>
+            </table>
         </div>
 
-        <h1>Últimas Anomalias Registradas</h1>
+        <!-- ÚLTIMAS ATUALIZAÇÕES (área estilo "notícias") -->
+        <div class="secao">
+            <h2 class="titulo-secao">Últimas Atualizações do Sistema</h2>
 
-        <table>
-            <tr class="cabecalho">
-                <th>ID - ANOMALIA</th>
-                <th>Data de Registro</th>
-                <th>Descrição Detalhada</th>
-                <th>Responsável Designado</th>
-            </tr>
+            <div class="cards">
+                <div class="card" onclick="location.href='AtualizazaoCadastro.php'">
+                    <h3>✔ Novo módulo de cadastro</h3>
+                    <p>Adicionada área de cadastro otimizada para registrar equipamentos.</p>
+                </div>
+                <div class="card" onclick="location.href='AtualizacaoRelatorio.php'">
+                    <h3>✔ Atualização na tela de relatórios</h3>
+                    <p>Gráficos e filtros aprimorados para facilitar análises.</p>
+                </div>
+                <div class="card" onclick="location.href='AtualizacaoBugs.php'">
+                    <h3>✔ Correção de bugs</h3>
+                    <p>Melhorias gerais de desempenho e estabilidade do sistema.</p>
+                </div>
+            </div>
+        </div>
 
-            <tr>
-                <td>02530</td>
-                <td>23/03/2026</td>
-                <td>Vazamento identificado na tubulação do setor de refrigeração.</td>
-                <td>Equipe de manutenção hidráulica</td>
-            </tr>
+        <!-- RODAPÉ -->
+        <footer>
+            © 2026 AnomSystem — Monitoramento e Gestão de Anomalias Industriais <br>
+            Grupo: Arthur Barcelos, Arthur Benfica, João Vitor e Murilo Sabatini
+        </footer>
 
-            <tr>
-                <td>02531</td>
-                <td>24/03/2026</td>
-                <td>Falha intermitente do setor elétrico na ala de produção.</td>
-                <td>Setor de engenharia elétrica</td>
-            </tr>
-
-            <tr>
-                <td>02532</td>
-                <td>25/03/2026</td>
-                <td>Rachadura no vidro da janela principal do setor administrativo.</td>
-                <td>Grupo de vidraceiros</td>
-            </tr>
-        </table>
     </div>
 </body>
 </html>
