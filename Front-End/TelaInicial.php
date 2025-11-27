@@ -20,13 +20,6 @@
             <li><a href="relatorio.php">Relatórios</a></li>
         </ol>
     </div>
-
-    <div class="banner-full">
-        <div class="banner-texto">
-            <h1>Monitoramento Inteligente de Anomalias</h1>
-            <p>Controle, eficiência e segurança industrial.</p>
-        </div>
-    </div>
     
     <!-- CONTEÚDO -->
     <div class="conteudo">
