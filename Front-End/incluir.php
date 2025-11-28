@@ -47,6 +47,7 @@
                 </button>
             </div>
 
+            <!-- Modal do grau -->
             <label>Grau de Risco</label>
             <div class="input-group mb-3">
                 <input type="text" id="GrauNome" class="form-control" readonly>
@@ -56,10 +57,10 @@
                 </button>
             </div>
 
-
             <label for="Desc">Descrição</label>
             <textarea id="Desc" name="Desc"></textarea>
-
+            
+            <!-- Modal do prazo -->
             <label>Prazo de Ação</label>
             <div class="input-group mb-3">
                 <input type="text" id="PrazoNome" class="form-control" readonly>
