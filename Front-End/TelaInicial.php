@@ -1,4 +1,3 @@
-<!-- HTML + CSS combinado para tela inicial estilo Arcelor Mittal -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>

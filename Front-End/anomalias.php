@@ -20,15 +20,7 @@
 
     <button type="button" class="btn btn-secondary">Excluir</button>
 
-    <button type="button" class="btn-close" aria-label="Close"></button>
 
-
-    <nav class="navbar navbar-expand-lg">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="search" />
-                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-                </form>
-    </nav>
 
     </div>
 

@@ -13,7 +13,7 @@
   <h1>Usuários</h1>
 
   <div class="buttons">
-    <button type="button" class="btn btn-warning" onclick="window.location.href='cadastro.php'">Voltar</button>
+    <button type="button" class="btn btn-danger" onclick="window.location.href='cadastro.php'">Voltar</button>
     <button type="button" class="btn btn-primary" onclick="window.location.href='novoUsuario.php'">
       + Novo Usuário
     </button>

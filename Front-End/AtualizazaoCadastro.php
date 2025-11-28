@@ -14,7 +14,7 @@
         </header>
 
         <main>
-            <h2>Título da Atualização</h2>
+            <h2>Novo módulo de cadastro</h2>
             <p>
                 Esta página descreve uma atualização recente do sistema AnomSystem. Aqui você pode detalhar
                 melhorias, correções ou novos recursos implementados.
@@ -28,7 +28,7 @@
             <p>
                 Caso a atualização envolva processos importantes, adicione também instruções ou avisos relevantes.
             </p>
-        </main>
+        </mai   n>
 
         <footer>
             © 2026 AnomSystem — Monitoramento e Gestão de Anomalias Industriais <br>

@@ -25,8 +25,8 @@
     <div class="main-container">
         <div class="form-left">
 
-            <label for="IdAnomlias">Id. Anomalia</label>
-            <input type="text" id="IdAnomlias" name="IdAnomlias">
+            <!-- <label for="IdAnomlias">Id. Anomalia</label>
+            <input type="text" id="IdAnomlias" name="IdAnomlias"> -->
 
             <label for="Relator">Relator</label>
             <input type="text" id="Relator" name="Relator">

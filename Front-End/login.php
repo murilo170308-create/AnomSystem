@@ -9,7 +9,7 @@
   <div class="container">
 
     <div class="left">
-      <img src="img/logo.png" alt="Logo do sistema">
+      <img src="../img/logo.png" alt="Logo do sistema">
     </div>
 
     <div class="right">

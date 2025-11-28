@@ -16,7 +16,7 @@
     <h1>Cadastrar Grau de Risco</h1>
     
     <div class="buttons">
-      <button type="button" class="btn btn-warning">Voltar</button>
+      <button type="button" class="btn btn-danger">Voltar</button>
       <button type="button" class="btn btn-primary">+ Novo Usuário</button>
     </div>
   </div>
