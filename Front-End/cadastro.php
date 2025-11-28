@@ -21,18 +21,10 @@
   <!-- BARRA SUPERIOR -->
   <div class="topbar">
     <h1>Cadastros</h1>
-    <button type="button" class="btn btn-danger">Voltar</button>
+    <button type="button" class="btn btn-danger" onclick="window.location.href='TelaInicial.php'" >Voltar</button>
   </div>
 
   <!-- CONTEÚDO -->
-  <div class="container">
-    <div class="card" onclick="window.location.href='cadastroResponsavel.php'">
-      <div class="card-text">
-        <h2>Responsáveis</h2>
-        <p>Cadastros de Responsáveis que irão ser incluídos na Anomalia</p>
-      </div>
-      <i class="bi bi-person-badge-fill"></i>
-    </div>
 
     <div class="card" onclick="window.location.href='cadastroUsuarios.php'">
       <div class="card-text" >

@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>Cadastros de Grau de risco das Anomalias</h1>
+    <h1>Cadastrar Grau de Risco</h1>
     
     <div class="buttons">
       <button type="button" class="btn btn-warning">Voltar</button>

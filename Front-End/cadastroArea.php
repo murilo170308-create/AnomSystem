@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>Cadastros de Área / Setor da empresa</h1>
+    <h1>Cadastrar Área / Setor</h1>
     
     <div class="buttons">
       <button type="button" class="btn btn-warning">Voltar</button>
