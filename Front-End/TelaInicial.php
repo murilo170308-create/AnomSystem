@@ -16,7 +16,6 @@
         <ol>
             <li><a href="anomalias.php">Anomalias</a></li>
             <li><a href="cadastro.php">Cadastro</a></li>
-            <li><a href="relatorio.php">Relatórios</a></li>
         </ol>
     </div>
     
@@ -39,24 +38,24 @@
                 </tr>
 
                 <tr>
-                    <td>02530</td>
+                    <td>1</td>
                     <td>23/03/2026</td>
                     <td>Vazamento detectado na tubulação do setor de refrigeração.</td>
-                    <td>Equipe de manutenção hidráulica</td>
+                    <td>Carlos Silva</td>
                 </tr>
 
                 <tr>
-                    <td>02531</td>
+                    <td>2</td>
                     <td>24/03/2026</td>
                     <td>Falha intermitente no setor elétrico da produção.</td>
-                    <td>Setor de engenharia elétrica</td>
+                    <td>Carlos Silva</td>
                 </tr>
 
                 <tr>
-                    <td>02532</td>
+                    <td>3</td>
                     <td>25/03/2026</td>
                     <td>Rachadura no vidro da janela principal do setor administrativo.</td>
-                    <td>Grupo de vidraceiros</td>
+                    <td>João Pereira</td>
                 </tr>
             </table>
         </div>

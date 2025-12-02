@@ -2,7 +2,7 @@
 $host = "localhost";  
 $usuario = "root";  
 $senha = "usbw";  
-$bd = "testeanonsystem";  
+$bd = "testeanomsystem";  
 $porta = 3307;
 
 $conn = new mysqli($host, $usuario, $senha, $bd, $porta);

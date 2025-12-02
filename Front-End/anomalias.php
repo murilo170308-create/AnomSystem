@@ -12,6 +12,7 @@
 
 <div class="topnav p-3 bg-primary d-flex gap-2">
     <button type="button" class="btn btn-light" onclick="window.location.href='incluir.php'">Incluir</button>
+    <button type="button" class="btn btn-danger" onclick="window.location.href='TelaInicial.php'">Voltar</button>
 </div>
 
 <div class="container-fluid mt-4">
@@ -87,11 +88,6 @@
                         ⋮
                     </button>
                     <ul class='dropdown-menu'>
-                        <li>
-                            <a class='dropdown-item' href='visualizar.php?id={$row['id']}'>
-                                Visualizar
-                            </a>
-                        </li>
                         <li>
                             <a class='dropdown-item' href='alterar.php?id={$row['id']}'>
                                 Alterar
