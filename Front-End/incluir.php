@@ -17,6 +17,10 @@
 
 <form action="../Back-End/incluir_Anomalias.php" method="POST">
 
+<?php
+require '../Back-End/conexao.php';
+?>
+
     <div class="botoes">
         <button type="submit" class="btn btn-outline-success">Salvar</button>
         <button type="button" class="btn btn-outline-danger" onclick="window.location.href='anomalias.php'">Cancelar</button>
@@ -28,11 +32,25 @@
             <!-- <label for="IdAnomlias">Id. Anomalia</label>
             <input type="text" id="IdAnomlias" name="IdAnomlias"> -->
 
-            <label for="Relator">Relator</label>
-            <input type="text" id="Relator" name="Relator">
+            <!-- MODAL do relator -->
+            <label>Relator</label>
+            <div class="input-group mb-3">
+              <input type="text" id="RelatorNome" class="form-control" readonly>
+              <input type="hidden" id="Relator" name="Relator">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalRelator">
+                Selecionar
+              </button>
+            </div>
 
-            <label for="Responsavel">Responsável</label>
-            <input type="text" id="Responsavel" name="Responsavel">
+            <!-- MODAL do responsavel -->
+            <label>Responsável</label>
+            <div class="input-group mb-3">
+              <input type="text" id="ResponsavelNome" class="form-control" readonly>
+              <input type="hidden" id="Responsavel" name="Responsavel">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalResponsavel">
+                Selecionar
+              </button>
+            </div>
 
             <label for="DataOcorrido">Data Ocorrido</label>
             <input type="date" id="DataOcorrido" name="DataOcorrido">
@@ -40,11 +58,11 @@
             <!-- MODAL do setor -->
             <label>Área / Setor</label>
             <div class="input-group mb-3">
-                <input type="text" id="SetorNome" class="form-control" readonly>
-                <input type="hidden" id="Setor" name="Setor">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSetor">
-                    Selecionar
-                </button>
+              <input type="text" id="SetorNome" class="form-control" readonly>
+              <input type="hidden" id="Setor" name="Setor">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSetor">
+                Selecionar
+              </button>
             </div>
 
             <!-- Modal do grau -->
@@ -71,42 +89,111 @@
             </div>
 
         </div>
-
-        <fieldset>
-            <legend>Dados de Classificação</legend>
-
-            <legend>SPCIF</legend>
-
-            <label>Fatal</label>
-            <input type="checkbox" id="FAT"><br>
-
-            <label>C.P.T</label>
-            <input type="checkbox" id="CPT"><br>
-
-            <label>Trabalho Restrito</label>
-            <input type="checkbox" id="SPTR"><br>
-
-            <label>Tratamento Médico</label>
-            <input type="checkbox" id="SPT"><br>
-
-            <label>Primeiros Socorros</label>
-            <input type="checkbox" id="PS"><br>
-        </fieldset>
-
-        <fieldset>
-            <legend>Incidente de Trabalho</legend>
-
-            <label>Situação Insegura</label>
-            <input type="checkbox" id="SI"><br>
-
-            <label>Ato Inseguro</label>
-            <input type="checkbox" id="AT"><br>
-
-            <label>Quase Acidente</label>
-            <input type="checkbox" id="QA"><br>
-        </fieldset>
     </div>
 </form>
+
+<!-- Modal do Relator -->
+<div class="modal fade" id="modalRelator" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Selecionar Relator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          <?php
+            $sql = "SELECT id_usuario, nome FROM cadastro_usuario ORDER BY nome";
+            $res = mysqli_query($conn, $sql);
+
+            while($row = mysqli_fetch_assoc($res)){
+                $id = $row['id_usuario'];
+                $nome = htmlspecialchars($row['nome'], ENT_QUOTES);
+
+                echo "
+                  <tr>
+                    <td>$nome</td>
+                    <td>
+                      <button type='button' class='btn btn-success'
+                        onclick=\"selecionarRelator($id, '$nome')\">
+                        Selecionar
+                      </button>
+                    </td>
+                  </tr>
+                ";
+            }
+          ?>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal do Responsável -->
+<div class="modal fade" id="modalResponsavel" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Selecionar Responsável</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          <?php
+            $sql = "SELECT id_usuario, nome 
+                    FROM cadastro_usuario 
+                    WHERE responsavel = 1
+                    ORDER BY nome";
+            $res = mysqli_query($conn, $sql);
+
+            while($row = mysqli_fetch_assoc($res)){
+                $id = $row['id_usuario'];
+                $nome = htmlspecialchars($row['nome'], ENT_QUOTES);
+
+                echo "
+                  <tr>
+                    <td>$nome</td>
+                    <td>
+                      <button type='button' class='btn btn-success'
+                        onclick=\"selecionarResponsavel($id, '$nome')\">
+                        Selecionar
+                      </button>
+                    </td>
+                  </tr>
+                ";
+            }
+          ?>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <!-- Modal do setor -->
 <div class="modal fade" id="modalSetor" tabindex="-1">

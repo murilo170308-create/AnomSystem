@@ -9,31 +9,55 @@
     <?php
         require 'conexao.php';
 
-        $relator = $_POST["Relator"];
-        $responsavel = $_POST["Responsavel"];
-        $dataOcorrido = $_POST["DataOcorrido"];
-        $setor = $_POST["Setor"];
-        $desc = $_POST["Desc"];
 
-        $sql1 = "INSERT INTO anomalias (relator, responsavel, data, area_setor) values ('$relator', '$responsavel', '$dataOcorrido', '$setor')";
+        $id_relator     = $_POST['Relator'];
+        $id_responsavel = $_POST['Responsavel'];
+        $data           = $_POST['DataOcorrido'];
+        $id_setor       = $_POST['Setor'];
+        $id_grau        = $_POST['Grau'];
+        $id_prazo       = $_POST['Prazo'];
+        $descricao      = $_POST['Desc'];
+
+
+        //VALIDAÇÃO BÁSICA
+
+        if (
+            empty($id_relator) || empty($id_responsavel) ||
+            empty($data) || empty($id_setor) ||
+            empty($id_grau) || empty($id_prazo) ||
+            empty($descricao)
+        ) {
+            die("Erro: Todos os campos obrigatórios devem ser preenchidos.");
+        }
+
+        $sql1 = "
+        INSERT INTO anomalias 
+        (data, id_relator, id_responsavel, id_setor, id_grau, id_prazo) 
+        VALUES 
+        ('$data', '$id_relator', '$id_responsavel', '$id_setor', '$id_grau', '$id_prazo')
+        ";
 
         $result1 = mysqli_query($conn, $sql1);
 
-        if(!$result1){
+        if (!$result1) {
             die("Erro ao cadastrar anomalia: " . mysqli_error($conn));
         }
 
         $idAnomalia = mysqli_insert_id($conn);
 
-        $sql2 = "INSERT INTO descricao (id_anomalia, descricao_anomalia) values ('$idAnomalia', '$desc')";
+        $sql2 = "
+        INSERT INTO descricao (id_anomalia, descricao_anomalia)
+        VALUES ('$idAnomalia', '$descricao')
+        ";
 
         $result2 = mysqli_query($conn, $sql2);
 
-        if($result2 == true){
-            echo "Cadastrado com sucesso!";
-        }else{
-            echo "Erro ao cadastrar";
+        if (!$result2) {
+            die("Erro ao cadastrar descrição: " . mysqli_error($conn));
         }
-    ?>
+
+        header("Location: ../Front-End/anomalias.php");
+        exit;
+        ?>
 </body>
 </html>

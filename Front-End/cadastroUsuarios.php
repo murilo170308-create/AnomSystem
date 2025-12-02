@@ -30,8 +30,6 @@
         <th>Email</th>
         <th>CPF</th>
         <th>Nascimento</th>
-        <th>Admissão</th>
-        <th>Demissão</th>
         <th>Setor</th>
       </tr>
     </thead>
@@ -40,7 +38,7 @@
       <?php
         require '../Back-End/conexao.php';
 
-        $sql = "SELECT u.id_usuario, u.nome, u.email, u.cpf, u.data_nascimento, u.data_admissao, u.data_demissao, s.nome_setor
+        $sql = "SELECT u.id_usuario, u.nome, u.email, u.cpf, u.data_nascimento, s.nome_setor
                 FROM cadastro_usuario u
                 JOIN setor s ON u.id_setor = s.id_setor";
         $res = mysqli_query($conn, $sql);
@@ -53,8 +51,6 @@
                 <td>{$row['email']}</td>
                 <td>{$row['cpf']}</td>
                 <td>{$row['data_nascimento']}</td>
-                <td>{$row['data_admissao']}</td>
-                <td>{$row['data_demissao']}</td>
                 <td>{$row['nome_setor']}</td>
               </tr>
             ";

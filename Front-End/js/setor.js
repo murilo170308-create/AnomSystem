@@ -21,3 +21,19 @@ function selecionarPrazo(id, nome) {
     var modal = bootstrap.Modal.getInstance(document.getElementById("modalPrazo"));
     modal.hide();
 }
+
+function selecionarRelator(id, nome) {
+  document.getElementById('Relator').value = id;
+  document.getElementById('RelatorNome').value = nome;
+
+  var modal = bootstrap.Modal.getInstance(document.getElementById('modalRelator'));
+  modal.hide();
+}
+
+function selecionarResponsavel(id, nome) {
+  document.getElementById('Responsavel').value = id;
+  document.getElementById('ResponsavelNome').value = nome;
+
+  var modal = bootstrap.Modal.getInstance(document.getElementById('modalResponsavel'));
+  modal.hide();
+}

@@ -11,17 +11,16 @@
 
         $nome  = $_POST['nome'];
         $email = $_POST['email'];
+        $senha = $_POST['senha'];
         $cpf   = $_POST['cpf'];
         $dataN = $_POST['data_nascimento'];
-        $dataA = $_POST['data_admissao'];
-        $dataD = $_POST['data_demissao'];
-        $senha = md5($_POST['senha']); // provisório
         $idSetor = $_POST['id_setor'];
+        $responsavel = $_POST['responsavel'];
 
         $sql = "INSERT INTO cadastro_usuario
-        (nome, email, senha, cpf, data_nascimento, data_admissao, data_demissao, id_setor, senha_temporaria)
+        (nome, email, senha, cpf, data_nascimento, id_setor, responsavel)
         VALUES
-        ('$nome', '$email', '$senha', '$cpf', '$dataN', '$dataA', '$dataD', '$idSetor', 1)";
+        ('$nome', '$email', '$senha', '$cpf', '$dataN','$idSetor','$responsavel')";
 
         $result = mysqli_query($conn, $sql);
 

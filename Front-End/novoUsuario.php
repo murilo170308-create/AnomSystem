@@ -26,7 +26,7 @@ error_reporting(E_ALL);
 
 </div>
 
-<div class="main-container">
+<div class="main-container-fluid">
     <div class="main-container">
         <form id="formUsuario" action="../Back-End/cadastrar_usuario.php" method="POST" class="container-fluid">
             <div class="row">
@@ -51,17 +51,7 @@ error_reporting(E_ALL);
                 <input type="date" name="data_nascimento" class="form-control" required>
                 </div>
 
-                <div class="col-md-4 mb-3">
-                <label>Data de Admissão</label>
-                <input type="date" name="data_admissao" class="form-control" required>
-                </div>
-
-                <div class="col-md-4 mb-3">
-                <label>Data de Demissão</label>
-                <input type="date" name="data_demissao" class="form-control">
-                </div>
-
-                <!-- ✅ SETOR COM MODAL -->
+                <!-- SETOR COM MODAL -->
                 <div class="col-md-8 mb-3">
                 <label>Setor</label>
                 <div class="input-group">
@@ -74,9 +64,18 @@ error_reporting(E_ALL);
                 </div>
 
                 <div class="col-md-6 mb-3">
-                <label>Senha (padrão)</label>
+                <label>Senha</label>
                 <input type="password" name="senha" class="form-control" value="123456" required>
                 </div>
+
+                <div class="col-md-4 mb-3">
+                <label>É responsável?</label>
+                <select name="responsavel" class="form-control" required>
+                  <option value="0">Não</option>
+                  <option value="1">Sim</option>
+                </select>
+                </div>
+
             </div>
         </form>
     </div>
@@ -125,7 +124,6 @@ error_reporting(E_ALL);
           </tbody>
         </table>
       </div>
-
     </div>
   </div>
 </div>
