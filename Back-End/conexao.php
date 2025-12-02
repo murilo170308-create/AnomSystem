@@ -3,7 +3,7 @@ $host = "localhost";
 $usuario = "root";  
 $senha = "usbw";  
 $bd = "testeanonsystem";  
-$porta = 3306;
+$porta = 3307;
 
 $conn = new mysqli($host, $usuario, $senha, $bd, $porta);
 

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="../css/styleLogin.css">
+</head>
+
 <body>
   <div class="container">
 
@@ -15,17 +17,21 @@
     <div class="right">
       <h1>Anom<span>System</span></h1>
 
-      <div class="form-group">
-        <input type="email" placeholder="digite seu Email">
-      </div>
+      <form action="../Back-End/login_usuario.php" method="POST">
 
-      <div class="form-group">
-        <input type="password" placeholder="digite sua senha">
-      </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Digite seu Email" required>
+        </div>
 
-      <a href="/AnomSystem/Front-End/TelaInicial.php" class="btn">Entrar</a>
+        <div class="form-group">
+          <input type="password" name="senha" placeholder="Digite sua senha" required>
+        </div>
 
-</div>
+        <button type="submit" class="btn">Entrar</button>
+
+      </form>
+
+    </div>
   </div>
 </body>
 </html>
